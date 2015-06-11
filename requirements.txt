@@ -1,4 +1,5 @@
 beautifulsoup4==4.3.2
 Flask==0.10.1
+gunicorn==19.3.0
 html5lib==0.99999
 Whoosh==2.7.0
