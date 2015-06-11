@@ -1,0 +1,93 @@
+/* By default, MathML is exposed to accessibility tools and displayed in Gecko
+    browsers. You can force visual rendering with the following style: */
+ .mwe-math-mathml-a11y {
+     clip: auto;
+     overflow: visible;
+     position: static;
+     width: auto;
+     height: auto;
+     opacity: 1;
+ }
+ .mwe-math-fallback-image-inline, .mwe-math-fallback-image-display {
+     display: none !important;
+ }
+ 
+ /* To force the SVG fallback in Gecko browsers, use the following style: */
+ span.mwe-math-mathml-inline, div.mwe-math-mathml-display {
+     display: none !important;
+ }
+ span.mwe-math-mathml-inline + .mwe-math-fallback-image-inline {
+     display: inline !important;
+ }
+ div.mwe-math-mathml-display + .mwe-math-fallback-image-display {
+     display: block !important;
+ }
+ 
+ /* When MathML is displayed, you can easily style it via CSS (font-family,
+    font-size, color etc). Below are some examples of math font families,
+    with some suggested text fonts to go with. */
+ 
+ /* Asana Math (Palatino style) */
+ .mw-body, mtext {
+     font-family: Palatino Linotype, URW Palladio L, Asana Math;
+ }
+ math {
+     font-family: Asana Math;
+ }
+ 
+ /* Cambria (Microsoft Office style) */
+ .mw-body, mtext {
+     font-family: Cambria;
+ }
+ math {
+     font-family: Cambria Math;
+ }
+ 
+ /* Latin Modern (Computer Modern style) */
+ .mw-body, mtext {
+     font-family: Latin Modern Roman;
+ }
+ math {
+     font-family: Latin Modern Math;
+ }
+ 
+ /* STIX/XITS (Times New Roman style) */
+ .mw-body, mtext {
+     font-family: XITS, STIX;
+ }
+ math {
+     font-family: XITS Math, STIX Math;
+ }
+ 
+ /* TeX Gyre Bonum (Bookman style) */
+ .mw-body, mtext {
+     font-family: TeX Gyre Bonum;
+ }
+ math {
+     font-family: TeX Gyre Bonum Math;
+ }
+ 
+ /* TeX Gyre Pagella (Palatino style) */
+ .mw-body, mtext {
+     font-family: TeX Gyre Pagella;
+ }
+ math {
+     font-family: TeX Gyre Pagella Math;
+ }
+ 
+ /* TeX Gyre Schola (Century Schoolbook style) */
+ .mw-body, mtext {
+     font-family: TeX Gyre Schola;
+ }
+ math {
+     font-family: TeX Gyre Schola Math;
+ }
+ 
+ /* TeX Gyre Termes (Times New Roman style) */
+ .mw-body, mtext {
+     font-family: TeX Gyre Termes;
+ }
+ math {
+     font-family: TeX Gyre Termes Math;
+ }
+ 

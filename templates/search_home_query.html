@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>LaTeX Symbol Search</title>
+	<link rel="shortcut icon" href="/static/favicon.ico" />
+	<link rel="stylesheet" type="text/css" href="/static/wikipedia_common.css">
+	<!-- <link rel="stylesheet" type="text/css" href="/static/wikipedia_math_extension.css"> -->
+	<link rel="stylesheet" type="text/css" href="/static/stylesheet_query.css">
+</head>
+<body>
+<div id="body-container">
+
+    <h1><span class="latex">L<sup>a</sup>T<sub>e</sub>X</span> Symbol Search</h1>
+
+	<div id="search-head-container">
+    <form id="search-form" action="." method="GET">
+        <input id="search-text" type="text" name="query" {% if query %} value="{{query}}" {% endif %}>
+        <input type="submit" value="Search">
+    </form>
+    </div>
+    {% if table_rows %}
+    <p id="table-instructions">Mouse over equations to display their <span class="tex">T<sub>e</sub>X</span> commands</p>
+    {% endif %}
+
+    {% if table_rows %}
+	<table class="wikitable" style="border:1px;">
+	<tbody>
+		<tr>
+			<th rowspan="3" style="font-size:130%;">Symbol<br>
+			<small>in <a href="http://en.wikipedia.org/wiki/TeX" title="TeX"><span class="tex">T<sub>e</sub>X</span></a></small>
+			</th>
+			<th rowspan="3" style="font-size:130%;"><span class="tex">T<sub>e</sub>X</span> Command
+			</th>
+			<th style="text-align:left;">Name</th>
+			<th rowspan="3" style="font-size:130%;">Explanation</th>
+			<th rowspan="3" style="font-size:130%;">Examples</th>
+		</tr>
+		<tr>
+			<th>Read as</th>
+		</tr>
+		<tr>
+			<th style="text-align:right;">Category</th>
+		</tr>
+
+		{% for row in table_rows %}
+			{{ row|safe }}
+			<tr><td colspan="5" style="line-height: 0.1; background-color: #f2f2f2">&nbsp</td></tr>
+		{% endfor %}
+	</tbody>
+	</table>
+    {% endif %}
+</div>
+</body>
+</html>

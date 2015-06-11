@@ -1,0 +1,6 @@
+STORED_PRE = "_stored_"
+COMMANDS = "commands"
+KEYWORDS = "keywords"
+IMG_SRCS = "img_srcs"
+CONTENT = "content"
+HTML = "html"

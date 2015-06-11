@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>LaTeX Symbol Search</title>
+	<link rel="shortcut icon" href="/static/favicon.ico" />
+	<link rel="stylesheet" type="text/css" href="/static/stylesheet_home.css">
+</head>
+
+<body>
+<div id="body-container">
+
+    <h1 id="logo"><span class="latex">L<sup>a</sup>T<sub>e</sub>X</span> Symbol Search</h1>
+
+	<div id="search-head-container">
+    <form id="search-form" action="." method="GET">
+        <input id="search-text" type="text" name="query" {% if query %} value="{{query}}" {% endif %}>
+        <input type="submit" value="Search">
+    </form>
+    </div>
+</div>
+</body>
+
+</html>
