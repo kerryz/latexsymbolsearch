@@ -7,7 +7,7 @@ This is a search engine for LaTeX mathematical symbols. It indexes the tables of
 # Data
 There are some comprehensive LaTeX symbol lists, but all of the ones I found only contained the symbol and its command. This is not very useful for a search engine as the user can only find the symbol if the correct command is entered, and if the user already knows the command, what is the point of using a search engine?
 
-Therefore, I used Wikipedia's web page [{list of mathematical symbols}](http://en.wikipedia.org/wiki/List_of_mathematical_symbols) as the main data source, as it includes the following attributes of each symbol:
+Therefore, I used Wikipedia's web page [list of mathematical symbols](http://en.wikipedia.org/wiki/List_of_mathematical_symbols) as the main data source, as it includes the following attributes of each symbol:
 
 * name
 * read as
