@@ -1,5 +1,5 @@
 # Try it out!
-https://latexsymbolsearch.herokuapp.com
+[https://latexsymbolsearch.herokuapp.com](https://latexsymbolsearch.herokuapp.com)
 
 # Description
 This is a search engine for LaTeX mathematical symbols. It indexes the tables of mathematical symbols in [Wikipedia's](http://en.wikipedia.org/wiki/List_of_mathematical_symbols) and [Wikibooks'](http://en.wikibooks.org/wiki/LaTeX/Mathematics#List_of_Mathematical_Symbols) list of mathematical symbols pages.
