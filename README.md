@@ -1,3 +1,6 @@
+# Try it out!
+https://latexsymbolsearch.herokuapp.com
+
 # Description
 This is a search engine for LaTeX mathematical symbols. It indexes the tables of mathematical symbols in [Wikipedia's](http://en.wikipedia.org/wiki/List_of_mathematical_symbols) and [Wikibooks'](http://en.wikibooks.org/wiki/LaTeX/Mathematics#List_of_Mathematical_Symbols) list of mathematical symbols pages.
 
@@ -91,3 +94,10 @@ fuzzy_commands_results.upgrade_and_extend(fuzzy_keywords_results)
 or_results.upgrade_and_extend(fuzzy_commands_results)
 exact_results.upgrade_and_extend(or_results)
 ```
+
+# Todo
+* Separation of content and style: at the moment each table row is stored along with all the html tags, should extract and store only content. Very very ugly.
+* Collapsed and expandable table rows: first show only symbol and command, then on click expand explanation and examples.
+* AJAX for search as you type
+* Highlight matched terms (Whoosh built in feature)
+* Search suggestion: "Did you mean ...?" (Whoosh built in feature)
